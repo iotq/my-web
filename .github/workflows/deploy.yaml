@@ -1,4 +1,4 @@
-name: Build and Deploy to GCP VM via GHCR
+name: Build and Deploy to VM
 
 on:
   workflow_dispatch:
