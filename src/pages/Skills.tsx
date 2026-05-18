@@ -32,7 +32,7 @@ const skillData: SkillCategory[] = [
   },
 ];
 
-const Skills = () => {
+export function Skills() {
   return (
     <div>
       <div className="mb-12 animate-fade-up">
@@ -110,5 +110,3 @@ const Skills = () => {
     </div>
   );
 };
-
-export default Skills;

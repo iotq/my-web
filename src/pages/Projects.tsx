@@ -1,8 +1,5 @@
 import { Tag } from "antd";
-import {
-  LinkOutlined,
-  GithubOutlined,
-} from "@ant-design/icons";
+import { LinkOutlined, GithubOutlined } from "@ant-design/icons";
 
 interface Project {
   title: string;
@@ -40,14 +37,24 @@ const projects: Project[] = [
     subtitle: "Bussiness Web App",
     description:
       "為中小型企業打造的網絡應用，包含第三方登入、服務端渲染、多語言。\n網頁端採用 React + Ant Design + Tailwindcss + Next.js 構建，後端使用.NET + SQL Server。",
-    tags: ["React", "Ant Design","Next.js", "Tailwindcss", "SQL Server", "RabbitMQ", "Redis", "Kubernetes", "GitHub Action"],
+    tags: [
+      "React",
+      "Ant Design",
+      "Next.js",
+      "Tailwindcss",
+      "SQL Server",
+      "RabbitMQ",
+      "Redis",
+      "Kubernetes",
+      "GitHub Action",
+    ],
     year: "2026",
     link: "#",
     github: "#",
   },
 ];
 
-const Projects = () => {
+export function Projects() {
   return (
     <div>
       <div className="mb-12 animate-fade-up">
@@ -163,6 +170,4 @@ const Projects = () => {
       </div>
     </div>
   );
-};
-
-export default Projects;
+}

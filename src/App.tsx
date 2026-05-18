@@ -1,8 +1,8 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { MainLayout } from "./components/Layout";
-import About from "./pages/About";
-import Skills from "./pages/Skills";
-import Projects from "./pages/Projects";
+import { About } from "./pages/About";
+import { Skills } from "./pages/Skills";
+import { Projects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
 
 const App = () => {

@@ -1,4 +1,3 @@
-
 ARG NODE_VERSION=24-alpine
 
 FROM node:${NODE_VERSION} AS dependencies
@@ -17,13 +16,9 @@ RUN corepack enable && corepack prepare pnpm@10 --activate
 ENV NODE_ENV=production
 RUN corepack enable pnpm && pnpm build
 
-FROM node:${NODE_VERSION} AS runner
-WORKDIR /app
-ENV NODE_ENV=production
-ENV PORT=3000
-ENV HOSTNAME="0.0.0.0"
+FROM nginx:stable-alpine AS production-stage
+COPY --from=builder /app/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
 
-USER node
-EXPOSE 3000
-
-CMD ["node", "server.js"]
+CMD ["nginx", "-g", "daemon off;"]

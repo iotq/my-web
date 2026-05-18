@@ -9,10 +9,9 @@ const highlights = [
   { label: "技術棧", value: "React / .NET", detail: "主要開發工具" },
 ];
 
-const About = () => {
+export function About() {
   return (
     <div>
-      {/* Page Header */}
       <div className="mb-12 animate-fade-up">
         <p
           className="text-[11px] tracking-[0.25em] uppercase mb-3"
@@ -135,5 +134,3 @@ const About = () => {
     </div>
   );
 };
-
-export default About;
