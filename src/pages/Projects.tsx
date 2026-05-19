@@ -19,8 +19,6 @@ const projects: Project[] = [
       "為福利機構打造的全功能後台系統，包含個案管理、表格填寫、數據統計及匯出。\n網頁端採用 React + Material UI + Typescript 構建，數據庫使用Firestore",
     tags: ["React", "Material UI", "Typescript", "Firestore"],
     year: "2020-2024",
-    link: "#",
-    github: "#",
   },
   {
     title: "食物援助管理系統",
@@ -29,8 +27,6 @@ const projects: Project[] = [
       "為福利機構打造的全功能後台系統，包含個案管理、預約、庫存管理及追蹤。\n\n網頁端採用 React + Material UI 構建，數據庫使用Firestore，另外使用Go開發的Server作query和匯出Xlsx用途",
     tags: ["React", "Material UI", "Typescript", "Firestore", "Go"],
     year: "2022-2026",
-    link: "#",
-    github: "#",
   },
   {
     title: "標準企業門戶網站",
@@ -42,6 +38,7 @@ const projects: Project[] = [
       "Ant Design",
       "Next.js",
       "Tailwindcss",
+      ".NET",
       "SQL Server",
       "RabbitMQ",
       "Redis",
@@ -49,8 +46,32 @@ const projects: Project[] = [
       "GitHub Action",
     ],
     year: "2026",
-    link: "#",
-    github: "#",
+  },
+  {
+    title: "游戲 - 文字修真",
+    subtitle: "Game - Text Cultivation",
+    description:
+      "Unity開發的文字冒險手機游戲，包含獨自研發的物品系統, 人物系統, 對話系統, 任務系統, 戰鬥系統, 技能系統, 成就系統。",
+    tags: ["Unity 3D"],
+    year: "2025-2026",
+  },
+  {
+    title: "個人網站",
+    subtitle: "Personal Web",
+    description:
+      "簡單的個人網站, 采用Vite + React + Typescript + Tailwindcss, 能透過Github Action自動部署到雲服務平台的機器。",
+    tags: ["React", "Typescript", "Tailwindcss", "GitHub Action"],
+    year: "2026",
+    link: "https://choitangfei.com",
+    github: "https://github.com/iotq/my-web",
+  },
+  {
+    title: "游戲 - 進化.IO",
+    subtitle: "Game - Evolution.IO",
+    description:
+      "多人連綫的吞吞樂游戲演示，利用Cocos Creator開發 + .NET作游戲服務器, 透過websocket連接實時更新玩家的數據, 並使用Protobuf來規範化傳遞信息。",
+    tags: ["Cocos", ".NET"],
+    year: "2026",
   },
 ];
 
@@ -127,7 +148,7 @@ export function Projects() {
                   {project.tags.map((tag) => (
                     <Tag
                       key={tag}
-                      className="!!text-[11px] !px-2.5 !py-0.5 !rounded"
+                      className="!!text-[11px] px-2.5! py-0.5! rounded!"
                       style={{
                         background: "rgba(255,255,255,0.03)",
                         borderColor: "var(--border)",

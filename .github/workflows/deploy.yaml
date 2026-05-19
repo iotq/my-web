@@ -2,6 +2,9 @@ name: Build and Deploy to VM
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 permissions:
   packages: write

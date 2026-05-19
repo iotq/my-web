@@ -9,25 +9,38 @@ const skillData: SkillCategory[] = [
   {
     category: "前端開發",
     skills: [
-      { name: "React / Next.js", level: 92 },
-      { name: "TypeScript", level: 88 },
-      { name: "Tailwind CSS / Ant Design", level: 90 },
+      { name: "React / Next.js", level: 100 },
+      { name: "TypeScript", level: 100 },
+      { name: "Tailwind CSS / Ant Design", level: 100 },
     ],
   },
   {
     category: "後端開發",
     skills: [
-      { name: "Node.js / Express", level: 85 },
-      { name: "PostgreSQL / MongoDB", level: 82 },
+      { name: "C# / Go", level: 100 },
+      { name: ".NET + Aspire / Goframe", level: 100 },
+      { name: "PostgreSQL / SQL Server / RabbitMq / MeiliSearch", level: 100 },
+      { name: "DDD Architecture / CQRS", level: 100 },
+      { name: "Authentication / .NET Identity", level: 100 },
     ],
   },
   {
     category: "DevOps & 工具",
     skills: [
-      { name: "Docker / K8s", level: 75 },
-      { name: "AWS / GCP", level: 73 },
-      { name: "CI/CD (GitHub Actions)", level: 80 },
-      { name: "Git", level: 90 },
+      { name: "Docker / K8s", level: 100 },
+      { name: "AWS / GCP", level: 100 },
+      { name: "CI/CD (GitHub Actions)", level: 100 },
+      { name: "Git", level: 100 },
+    ],
+  },
+  {
+    category: "游戲",
+    skills: [
+      { name: "Blender", level: 100 },
+      { name: "Unity 3D", level: 100 },
+      { name: "Unreal Engine", level: 100 },
+      { name: "Cocos Creator", level: 100 },
+      { name: "Godot", level: 100 },
     ],
   },
 ];
@@ -35,7 +48,7 @@ const skillData: SkillCategory[] = [
 export function Skills() {
   return (
     <div>
-      <div className="mb-12 animate-fade-up">
+      <div className="mb-12! animate-fade-up">
         <p
           className="text-[11px] tracking-[0.25em] uppercase mb-3"
           style={{ color: "var(--accent)" }}
@@ -55,7 +68,7 @@ export function Skills() {
         />
       </div>
 
-      <div className="space-y-10">
+      <div className="space-y-10!">
         {skillData.map((cat, ci) => (
           <div
             key={cat.category}
@@ -63,7 +76,7 @@ export function Skills() {
             style={{ animationDelay: `${0.2 + ci * 0.15}s` }}
           >
             <h2
-              className="text-xs tracking-[0.15em] uppercase mb-6 pb-3 border-b"
+              className="text-xs tracking-[0.15em] uppercase pb-2! border-b"
               style={{
                 color: "var(--text-primary)",
                 borderColor: "var(--border)",
@@ -71,10 +84,10 @@ export function Skills() {
             >
               {cat.category}
             </h2>
-            <div className="space-y-5">
+            <div className="space-y-4!">
               {cat.skills.map((skill, si) => (
                 <div key={skill.name}>
-                  <div className="flex justify-between items-center mb-2">
+                  <div className="flex justify-between items-center">
                     <span
                       className="text-sm"
                       style={{ color: "var(--text-secondary)" }}

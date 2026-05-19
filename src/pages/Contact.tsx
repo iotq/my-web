@@ -25,7 +25,6 @@ const contactInfo = [
 export function Contact() {
   return (
     <div>
-      {/* Header */}
       <div className="mb-12 animate-fade-up">
         <p
           className="text-[11px] tracking-[0.25em] uppercase mb-3"
@@ -37,7 +36,7 @@ export function Contact() {
           聯絡方式
         </h1>
         <div
-          className="h-[2px] mt-4"
+          className="h-0.5 mt-4"
           style={{
             width: 0,
             animation: "expandLine 0.8s 0.3s ease forwards",
@@ -46,7 +45,6 @@ export function Contact() {
         />
       </div>
 
-      {/* Intro text */}
       <p
         className="text-base leading-6 mb-10 animate-fade-up delay-200"
         style={{ color: "var(--text-secondary)" }}
@@ -55,8 +53,7 @@ export function Contact() {
       </p>
 
       <div className="flex gap-16 flex-wrap">
-        {/* Left — Contact Info */}
-        <div className="space-y-6 animate-fade-up delay-300 min-w-[240px]">
+        <div className="space-y-6 animate-fade-up delay-300 min-w-60">
           {contactInfo.map((item) => (
             <div key={item.label} className="flex items-start gap-4">
               <div
