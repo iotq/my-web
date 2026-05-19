@@ -72,6 +72,8 @@ const projects: Project[] = [
       "多人連綫的吞吞樂游戲演示，利用Cocos Creator開發 + .NET作游戲服務器, 透過websocket連接實時更新玩家的數據, 並使用Protobuf來規範化傳遞信息。",
     tags: ["Cocos", ".NET"],
     year: "2026",
+    link: "https://game.choitangfei.com",
+    github: "https://github.com/iotq/my-game-cloud",
   },
 ];
 
