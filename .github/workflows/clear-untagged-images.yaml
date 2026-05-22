@@ -1,0 +1,17 @@
+name: Cleanup GHCR Untagged Images
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clean up untagged images
+        uses: dataaxiom/ghcr-cleanup-action@v1
+        with:
+          delete-untagged: true
+          dry-run: false
+          token: ${{ secrets.GHCR_CLEAN_TOKEN }}

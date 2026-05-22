@@ -29,10 +29,10 @@ const projects: Project[] = [
     year: "2022-2026",
   },
   {
-    title: "標準企業門戶網站",
+    title: "企業門戶網站",
     subtitle: "Bussiness Web App",
     description:
-      "為中小型企業打造的網絡應用，包含第三方登入、服務端渲染、多語言。\n網頁端採用 React + Ant Design + Tailwindcss + Next.js 構建，後端使用.NET + SQL Server。",
+      "為中小型企業打造的網絡應用，包含第三方登入、服務端渲染、多語言。\n網頁端採用 React + Ant Design + Tailwindcss + Next.js 構建，後端使用.NET + SQL Server。部署用Github Action進行CI/CD流程到GCP的GKE k8s cluster上",
     tags: [
       "React",
       "Ant Design",
@@ -72,7 +72,7 @@ const projects: Project[] = [
       "多人連綫的吞吞樂游戲演示，利用Cocos Creator開發 + .NET作游戲服務器, 透過websocket連接實時更新玩家的數據, 並使用Protobuf來規範化傳遞信息。",
     tags: ["Cocos", ".NET"],
     year: "2026",
-    link: "https://game.choitangfei.com",
+    link: "https://my-game-cloud-512536693789.asia-east2.run.app",
     github: "https://github.com/iotq/my-game-cloud",
   },
 ];
