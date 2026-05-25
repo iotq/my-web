@@ -46,6 +46,7 @@ const projects: Project[] = [
       "GitHub Action",
     ],
     year: "2026",
+    link: "https://shiningrain.net",
   },
   {
     title: "游戲 - 文字修真",
